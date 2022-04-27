@@ -128,13 +128,13 @@ function scrollToOnClick (e) {
 
 ScrollReveal().reveal('.about__container', { duretion: 1900});
 
-ScrollReveal().reveal('.skills__container', { duretion: 1800});
+ScrollReveal().reveal('.skills__container', { duretion: 1000});
 
- ScrollReveal().reveal('.work__card', { duretion: 1800});
+ ScrollReveal().reveal('.work__card', { duretion: 1000});
 
- ScrollReveal().reveal('.contact__container ', { duretion: 1800});
+ ScrollReveal().reveal('.contact__container ', { duretion: 1000});
  
- ScrollReveal().reveal('.home img ', { duretion: 1800});
+ ScrollReveal().reveal('.home img ', { duretion: 1000});
 
 
  var typed = new Typed(".auto-input", {
