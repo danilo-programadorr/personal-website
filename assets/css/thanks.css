@@ -218,54 +218,11 @@ p {
   bottom: 0;
   width: 100%;
   height: 8vh;
+  padding-top: 5px;
   display: flex;
   justify-content: center;
-  background-color: #69696986;
+  background-color: #63626286;
 }
-
-/* .button-animated {
-  width: 200px;
-  height: 200px;
-  box-shadow: 16px 14px 20px #0000008c;
-  border-radius: 10px;
-  position: relative;
-  top: 5rem;
-  left: 5rem;
-  overflow: hidden;
-}
-
-.button-animated::before {
-  content: "";
-  background-image: conic-gradient(
-    rgb(245, 13, 13) 20deg,
-    transparent 120deg
-  );
-  width: 150%;
-  height: 150%;
-  position: absolute;
-  animation: rotate 1.5s linear infinite;
-}
-
-.button-animated::after {
-  content: "";
-  width: 190px;
-  height: 190px;
-  background: #101010;
-  position: absolute;
-  border-radius: 10px;
-  display: flex;
-  letter-spacing: 5px;
-  box-shadow: inset 20px 20px 20px #0000008c;
-}
-
-@keyframes rotate {
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(-360deg);
-  }
-} */
 
 .containerAnimated {
   width: 200px;
@@ -287,6 +244,15 @@ p {
   animation: animate 3s infinite linear;
 }
 
+.content-animated a {
+  color: rgb(80, 240, 17);
+  font-size: 1.3rem;
+}
+
+.containerAnimated:hover  {
+  cursor: pointer;
+}  
+
   .corner {
     width: 198px;
     height: 45px;
@@ -304,8 +270,7 @@ p {
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* border: 2px solid #7ecd00; */
+    align-items: center; 
   }
 
     @keyframes animate {
@@ -325,10 +290,7 @@ p {
   .thanks {
     padding: 0.9rem 3rem;
   }
-  .button-thanks {
-    left: 6rem;
-    right: 6rem;
-  }
+  
   h1,p {
     left: 0rem;
     right: 0rem;
@@ -350,13 +312,9 @@ p {
     text-align: left;
   }
 
-  .button-thanks {
-    margin-top: 10rem;
-  }
-
   .containerAnimated {
     display: flex;
-   left: 10rem;
+   left: 11rem;
     bottom: -32rem;
   }
 
@@ -371,6 +329,7 @@ p {
     display: none;
   }
 }
+
 @media only screen and (max-width: 460px) {
   .containerAnimated {
     left: 6rem;
@@ -380,9 +339,10 @@ p {
     display: none;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .containerAnimated {
-    left: 5.5rem;
+    left: 6rem;
     bottom: -32rem;
   }
   .button-thanks {
@@ -393,11 +353,7 @@ p {
 @media only screen and (max-width: 335px) {
   .button-thanks {
     margin-top: 15rem;
-  }
-  .button-thanks {
-    left: 4.5rem;
-    right: 4.5rem;
-  }
+  } 
   .containerAnimated {
     display: flex;
    left: 2rem;
