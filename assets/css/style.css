@@ -902,62 +902,6 @@ color: #ffffff;
   color: rgb(247, 6, 6);
  transition: .5s ease-in;
 }
- 
- /*===============   AGRADECIMENTO PAGE  ===============*/
-  #container-thanks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .img-thanks {
-      width: 100%;
-      background-size: cover;
-      background-position: center center;
-      height: 100vh;
-     opacity: 0.2;
-  }
-  #container-thanks h1 {
-    position: relative;
-    top: 10rem;
-    left: -20rem;
-    display:flex;
-    margin: 5px;
-    font-size: 3.4rem;
-  }
-  #container-thanks h1 span {
-    margin-left: 20px;
-    color: #7ecd00;
-  }
-
-  #container-thanks p {
-    position: relative;
-    top: 15rem;
-    right:calc(100% - 30rem);
-    display:flex;
-  }
-
-  .button-thanks {
-    position: relative;
-    top: 22rem;
-    left: -7rem;
-  }
-  .social-thanks {
-    position: relative;
-    left: 85%;
-  }
-  .text-thanks {
-    position: relative;
-    left: 85%;
-    color: #7ecd00;
-  }
-  .logo-thanks {
-    left: -85%;
-  }
-
-  #footer-thanks  {
-    color: #7ecd00;
-  }
 
 /*=============== FOOTER ===============*/
  .footer {
@@ -969,7 +913,8 @@ color: #ffffff;
   column-gap: 1.6rem;
 }
 
-.footer__bg {border-top: 1px solid rgba(255, 255, 255, 0.027);
+.footer__bg {
+  border-top: 1px solid rgba(255, 255, 255, 0.027);
   padding: auto 0 3.5rem;
   position: relative;
 }
@@ -1056,22 +1001,10 @@ color: #ffffff;
 
 /* <!--========== SCROLLREVEAL==========--> */
 
-.home__container,
-.about__container,
-.skills__container,
-.work__card,
-.contact__container,
+
 .section__title {
   visibility: hidden;
 }
-
-.home img {
-  visibility: hidden;
-}
-
-/* Show Scroll Up*/
-
-/*=============== SCROLL BAR ===============*/
 
 /*========== BREAKPOINTS ==========*/
 /* For Large Devices */
@@ -1144,7 +1077,7 @@ color: #ffffff;
     position: absolute;
     right: 2rem;
     display: flex;
-
+    position: fixed;
   }
   .main {
     margin-left: 0;
@@ -1302,6 +1235,7 @@ color: #ffffff;
   .nav__toggle {
     right: initial;
     left: 1.5rem;
+    position: fixed;
   }
   .home {
     background-image: none;
@@ -1417,10 +1351,7 @@ color: #ffffff;
   .skills__title {
     font-size: var(--normal-font-size);
   }
-  .home__social-follow  {
-    right: -2.7rem;
-    top: -5rem;
-  }
+  
   .skills__container {
     grid-template-columns: 250px;
     row-gap: 3rem;

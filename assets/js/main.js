@@ -120,21 +120,11 @@ function scrollToOnClick (e) {
 
 
   ScrollReveal().reveal('.section__title', {
-    rotate: {x:0 , y: 100, z: 0},
-    duration: 1800 
+    rotate: {x:30 , y: 0, z: 0},
+    duration: 1300 
   });
 
-  ScrollReveal().reveal('.home__container', { duration: 1000 });
-
-ScrollReveal().reveal('.about__container', { duretion: 1900});
-
-ScrollReveal().reveal('.skills__container', { duretion: 1000});
-
- ScrollReveal().reveal('.work__card', { duretion: 1000});
-
- ScrollReveal().reveal('.contact__container ', { duretion: 1000});
- 
- ScrollReveal().reveal('.home img ', { duretion: 1000});
+  
 
 
  var typed = new Typed(".auto-input", {
